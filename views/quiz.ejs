@@ -1,0 +1,43 @@
+<%- include('layouts/header.ejs') %>
+<body>
+    <div class="navbar">
+        <div class="brand">
+        </div>
+        <div class="menu">
+            <a href="/"> Home</a>
+            <a href="/quiz" >Take the Quiz</a>
+            <a href="/AboutUs"> About Us</a>
+    </div>
+    <form>
+    <h2>What asset class would you like to divest from?</h2>
+    <br>
+<div class="padLeft">
+<input type="radio" name="answer" id="a1" value="q1a1">
+<label for="a1">Stocks</label><br>
+<input type="radio" name="answer" id="a2" value="q1a2">
+<label for="a2">Bonds</label><br>
+<input type="radio" name="answer" id="a3" value="q1a3">
+<label for="a3">Savings</label><br>
+</div>
+<h2>What percentage of this asset class would you like to move?</h2>
+<br>
+<div class="padLeft">
+<input type="text">
+</div>
+<h2>What asset class would you like to invest into?</h2>
+<br>
+<div class="padLeft">
+<input type="radio" name="answer" id="a1" value="q1a1">
+<label for="a1">Stocks</label><br>
+<input type="radio" name="answer" id="a2" value="q1a2">
+<label for="a2">Bonds</label><br>
+<input type="radio"  name="answer" id="a3" value="q1a3">
+<label for="a3">Savings</label><br>
+</div>
+</form>
+<div class="padLeft">
+<button>Submit answers!</button>
+</div>
+</body>
+</html>
+<%- include('layouts/footer.ejs') %>

@@ -1,6 +1,42 @@
 <%- include('layouts/header.ejs') %>
-    <div class="jumbotron">
-      <h1>This is great</h1>
-      <p>Welcome to templating using EJS</p>
+<body>
+    <div class="navbar">
+        <div class="brand">
+        </div>
+        <div class="menu">
+            <a href="/"> Home</a>
+            <a href="/quiz" >Take the Quiz</a>
+            <a href="/AboutUs"> About Us</a>
+        </div>
     </div>
+    <h2>Our Mission</h2>
+    <p>Throughout our diligent work on this project, our group maintained a single goal: Create a simple product for the
+        average American investor that can provide some level of outsized value to them. This goal, simple in nature,
+        acted as a guiding force throughout the event, giving us direction when we found ourselves at a crossroad. This
+        dedication to customer experience and simplicity kept us rooted in reality and connected with the user's desires
+        for such a product.</p>
+
+    <h2>Our Assumptions</h2>
+    <h1>Pie Chart</h1>
+    <div class="piechart"></div><br><br><br><br><br><br><br>
+    <p>We made the assumption that the investor carries something resembling a "standard" portfolio and allocation of
+        stocks, bonds, and savings. The allocations go as follows:<br>50% Stocks<br>25% Bonds<br>25% Savings</p>
+    <h2>Methodology</h2>
+    <p>How could a group of 4 students create a product within the assigned 24 hour time limit? We knew we had to keep
+        things simple, and that's exactly what we did. We made the assumption that most investors entering our website
+        would be happy to answer questions about what they would like to do with their portfolio. We are of the belief
+        that the end-user is willing to put in some level of effort into using a program if it means some form of
+        outsized value for them. Learning how your allocation in stocks, bonds, and cash can impact the riskiness of
+        your portfolio is something that most investors can get behind. This clarity of their financial standing is so
+        valuable that they are willing to put in some effort. Aside from this, people enjoy interactivity and appreciate
+        when a program is tailored to their individual situation. In essence, our model involves asking the user
+        questions they want to answer: How much do you want to divest? From what asset class? What asset class would you
+        like to move into? These questions, we believe, can help gain a rough understanding of the riskiness of the
+        client's portfolio. From this point, we can explain how the riskiness of their portfolio may or may not align
+        with their personal financial goals.</p>
+    <br>
+    <a href="Quiz.html" class="takeQuizButton">Take the Quiz</a>
+</body>
+
+</html>
 <%- include('layouts/footer.ejs') %>

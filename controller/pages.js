@@ -16,4 +16,7 @@ router.get('/quiz', (req, res) => {
 router.get('/results', (req, res) => {
     res.render('results', { pageTitle: 'results'});
 })
+router.get('/AboutUs', (req, res) => {
+    res.render('AboutUs', { pageTitle: 'AboutUs'});
+})
 module.exports = router;

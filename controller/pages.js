@@ -3,7 +3,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 const router = express.Router();
-
 /*
                             Home page
 */
@@ -11,4 +10,10 @@ const router = express.Router();
 router.get('/', (req, res) => {
     res.render('home', { pageTitle: 'Home' });
 });
+router.get('/quiz', (req, res) => {
+    res.render('quiz', { pageTitle: 'Quiz' });
+});
+router.get('/results', (req, res) => {
+    res.render('results', { pageTitle: 'results'});
+})
 module.exports = router;

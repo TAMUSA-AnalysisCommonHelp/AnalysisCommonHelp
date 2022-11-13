@@ -14,12 +14,17 @@
 <div class="padLeft">
 <input type="radio" name="answer" id="a1" value="q1a1">
 <label for="a1">Stocks</label><br>
+<% let stocksPercent = 65; %>
 <input type="radio" name="answer" id="a2" value="q1a2">
 <label for="a2">Bonds</label><br>
+<% let bondsPercent = 10; %>
 <input type="radio" name="answer" id="a3" value="q1a3">
 <label for="a3">Savings</label><br>
+<% let savingsPercent = 25; %>
 </div>
 <h2>What percentage of this asset class would you like to move?</h2>
+<% let transferPercent = x; %>
+<% results=(boundsPercent*0.4)+stocksPercent; %>
 <br>
 <div class="padLeft">
 <input type="text">
@@ -36,7 +41,7 @@
 </div>
 </form>
 <div class="padLeft">
-<button>Submit answers!</button>
+<a href="/results" class="btn btn-primary" style="margin-left: 100%;">Submit answers!</a>
 </div>
 </body>
 </html>

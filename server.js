@@ -13,6 +13,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', pagesRouter);
 
-app.listen(port, () => {
+app.listen(port, ()=> {
     console.log('Express server is running');
 });

@@ -8,40 +8,54 @@
             <a href="/quiz" >Take the Quiz</a>
             <a href="/AboutUs"> About Us</a>
     </div>
+    
     <form>
-    <h2>What asset class would you like to divest from?</h2>
+    <label>Bounds Percent</label>
+    <input id="boundsPercent" placeholder="10" required>
     <br>
+    <label>Savings Percent</label>
+    <input id="savingsPercent" placeholder="30" required>
+    <br>
+    <label>Stocks Percent</label>
+    <input id="stocksPercent" placeholder="60" required>
+    <br>
+    <label>At what percent would you want to take out at what asset?</label>
+    <input id="takenoutPercent"  placeholder="5" required>
+    <% let takenoutPercent=5; %>
+
+    <% let savingsPercent = 30; %>
+    <% let stocksPercent = 60; %>
+    <% let bondsPercent = 10; %>
+<h2>What asset class would you like to divest from?</h2>
 <div class="padLeft">
-<input type="radio" name="answer" id="a1" value="q1a1">
-<label for="a1">Stocks</label><br>
-<% let stocksPercent = 65; %>
-<input type="radio" name="answer" id="a2" value="q1a2">
-<label for="a2">Bonds</label><br>
-<% let bondsPercent = 10; %>
-<input type="radio" name="answer" id="a3" value="q1a3">
-<label for="a3">Savings</label><br>
-<% let savingsPercent = 25; %>
+    <input type="radio" id="bounds1" name="assets1" value="bounds1">
+    <label for="bounds1">Bound</label><br>
+    <input type="radio" id="savings1" name="assets1" value="savings1" checked>
+    <label for="savings">Savings</label><br>
+    <input type="radio" id="stocks1" name="assets1" value="stocks1">
+    
+    <label for="stocks1">Stocks</label>
+<% savingsPercent= savingsPercent-takenoutPercent; %>
 </div>
-<h2>What percentage of this asset class would you like to move?</h2>
-<% let transferPercent = 20; %>
-<% results=(bondsPercent*0.4)+stocksPercent; %>
+
 <br>
 <div class="padLeft">
-<input type="text">
 </div>
 <h2>What asset class would you like to invest into?</h2>
-<br>
 <div class="padLeft">
-<input type="radio" name="answer" id="a1" value="q1a1">
-<label for="a1">Stocks</label><br>
-<input type="radio" name="answer" id="a2" value="q1a2">
-<label for="a2">Bonds</label><br>
-<input type="radio"  name="answer" id="a3" value="q1a3">
-<label for="a3">Savings</label><br>
+    <input type="radio" id="bounds" name="assets" value="bounds" >
+    <label for="bounds">Bound</label><br>
+    <input type="radio" id="savings" name="assets" value="savings">
+    <label for="savings">Savings</label><br>
+    <input type="radio" id="stocks" name="assets" value="stocks" checked>
+    <label for="stocks">Stocks</label>
+
+<% stocksPercent=stocksPercent+takenoutPercent; %>
 </div>
 </form>
 <div class="padLeft">
 <a href="/results" class="btn btn-primary" style="margin-left: 100%;">Submit answers!</a>
+<% results=(bondsPercent*0.4)+stocksPercent; %>
 </div>
 </body>
 </html>
